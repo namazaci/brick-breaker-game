@@ -12,7 +12,6 @@ public class Ball : MonoBehaviour {
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
 
-		rb.AddForce(Vector2.up * 500);
 	}
 	
 	// Update is called once per frame
@@ -21,12 +20,21 @@ public class Ball : MonoBehaviour {
 		{
 			transform.position = paddle.position;
 		}
+
+		if(Input.GetButtonDown("Jump") && !inPlay)
+		{
+			inPlay = true;
+			rb.AddForce(Vector2.up * 500);
+
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Bottom"))
 		{
-			Debug.Log("Ball hit the bottom of the screen");	
+			Debug.Log("Ball hit the bottom of the screen");
+			rb.velocity = Vector2.zero;	
+			inPlay = false;
 		}
 	}
 }

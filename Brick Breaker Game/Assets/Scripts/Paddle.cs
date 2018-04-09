@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Paddle : MonoBehaviour {
 
+	public float speed;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +13,8 @@ public class Paddle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		float horizontal = Input.GetAxis("Horizontal");
+
+		transform.Translate(Vector2.right * horizontal * Time.deltaTime * speed);
 	}
 }

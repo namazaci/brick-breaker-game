@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 108328430}
   - component: {fileID: 108328429}
   - component: {fileID: 108328431}
+  - component: {fileID: 108328432}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -201,6 +202,38 @@ MonoBehaviour:
   speed: 7
   rightScreenEdge: 5.6
   leftScreenEdge: -5.6
+--- !u!60 &108328432
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108328428}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.026319187, y: 0.12535906}
+      - {x: -0.060116135, y: 0.055946827}
+      - {x: -0.066530325, y: -0.041515112}
+      - {x: -0.06396469, y: -0.055947065}
+      - {x: 0.06537876, y: -0.0607574}
+      - {x: 0.06971439, y: -0.040714502}
+      - {x: 0.06137737, y: 0.045882463}
+      - {x: 0.033191968, y: 0.12329531}
 --- !u!1 &1046284479
 GameObject:
   m_ObjectHideFlags: 0

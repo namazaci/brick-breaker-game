@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 437846454}
   m_Layer: 0
   m_Name: Bottom Screen Edge
-  m_TagString: Untagged
+  m_TagString: Bottom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

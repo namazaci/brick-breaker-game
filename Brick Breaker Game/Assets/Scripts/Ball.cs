@@ -17,4 +17,11 @@ public class Ball : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if(other.CompareTag("bottom"))
+		{
+			Debug.Log("Ball hit the bottom of the screen");	
+		}
+	}
 }

@@ -9,6 +9,7 @@ public class Ball : MonoBehaviour {
 	public Transform paddle;
 	public float speed;
 	public Transform explosion;
+	public GameManager gm;
 
 	// Use this for initialization
 	void Start () {

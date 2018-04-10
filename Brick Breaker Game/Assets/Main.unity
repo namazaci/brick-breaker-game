@@ -1851,6 +1851,7 @@ MonoBehaviour:
   paddle: {fileID: 1038365433}
   speed: 400
   explosion: {fileID: 4717180120950752, guid: 0203ab3de61b0b54d9e8ef02330b17e6, type: 2}
+  gm: {fileID: 697712530}
 --- !u!1 &1709756881
 GameObject:
   m_ObjectHideFlags: 0

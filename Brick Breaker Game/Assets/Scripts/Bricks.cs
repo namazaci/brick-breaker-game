@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class Bricks : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+	public int points;
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		
+		livesText.text = "Lives: " + lives;
+		scoreText.text = "Score: " + score;
 	}
 	
 	// Update is called once per frame

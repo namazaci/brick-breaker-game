@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 	public Text livesText;
 	public Text scoreText;
 	public bool gameOver;
+	public GameObject gameOverPanel;
 	
 	// Use this for initialization
 	void Start () {
@@ -43,5 +44,6 @@ public class GameManager : MonoBehaviour {
 
 	void GameOver(){
 		gameOver = true;
+		gameOverPanel.SetActive(true);
 	}
 }

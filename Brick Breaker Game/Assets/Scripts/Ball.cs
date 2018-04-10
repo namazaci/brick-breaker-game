@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour {
 	public bool inPlay;
 	public Transform paddle;
 	public float speed;
+	public Transform explosion;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +43,8 @@ public class Ball : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		if(other.transform.CompareTag("brick"))
 		{
+			Instantiate(explosion, other.transform.position, other.transform.rotation);
+
 			Destroy(other.gameObject);
 		}
 	}

@@ -806,6 +806,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a6637f45ea1c944be7d5204abb8915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 3
+  score: 0
+  livesText: {fileID: 684254811}
+  scoreText: {fileID: 1139900688}
 --- !u!4 &697712531
 Transform:
   m_ObjectHideFlags: 0

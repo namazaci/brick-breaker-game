@@ -51,4 +51,9 @@ public class GameManager : MonoBehaviour {
 	public void PlayAgain(){
 		SceneManager.LoadScene("Main");
 	}
+
+	public void Quit(){
+		Application.Quit();
+		Debug.Log("Game Quit");
+	}
 }

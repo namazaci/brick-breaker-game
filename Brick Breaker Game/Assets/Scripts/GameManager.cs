@@ -12,11 +12,13 @@ public class GameManager : MonoBehaviour {
 	public Text scoreText;
 	public bool gameOver;
 	public GameObject gameOverPanel;
+	public int numberOfBricks;
 	
 	// Use this for initialization
 	void Start () {
 		livesText.text = "Lives: " + lives;
 		scoreText.text = "Score: " + score;
+		numberOfBricks = GameObject.FindGameObjectsWithTag("brick").Length;
 	}
 	
 	// Update is called once per frame
@@ -41,6 +43,14 @@ public class GameManager : MonoBehaviour {
 		score += points; 
 
 		scoreText.text = "Score: " + score;
+	}
+
+	public void UpdateNumberOfBricks(){
+		numberOfBricks --;
+		if(numberOfBricks <= 0)
+		{
+			GameOver();
+		}
 	}
 
 	void GameOver(){

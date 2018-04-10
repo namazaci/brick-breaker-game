@@ -25,7 +25,13 @@ public class GameManager : MonoBehaviour {
 		lives += changeInLives;
 
 		//Check for no lives left and trigger the end of the game
-		
+
 		livesText.text = "Lives: " + lives;
+	}
+
+	public void UpdateScore(int points){
+		score += points; 
+
+		scoreText.text = "Score: " + score;
 	}
 }

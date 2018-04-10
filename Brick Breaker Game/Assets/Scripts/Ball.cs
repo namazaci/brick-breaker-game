@@ -40,7 +40,7 @@ public class Ball : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D other){
-		if(other.transfrom.CompareTag("brick"))
+		if(other.transform.CompareTag("brick"))
 		{
 			Destroy(other.gameObject);
 		}

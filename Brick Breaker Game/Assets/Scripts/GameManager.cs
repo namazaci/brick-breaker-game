@@ -20,4 +20,12 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public void UpdateLives(int changeInLives){
+		lives += changeInLives;
+
+		//Check for no lives left and trigger the end of the game
+		
+		livesText.text = "Lives: " + lives;
+	}
 }

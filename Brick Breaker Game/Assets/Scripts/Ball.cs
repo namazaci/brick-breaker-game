@@ -43,8 +43,8 @@ public class Ball : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		if(other.transform.CompareTag("brick"))
 		{
-			Instantiate(explosion, other.transform.position, other.transform.rotation);
-
+			Transform newExplosion = Instantiate(explosion, other.transform.position, other.transform.rotation);
+			Destroy(newExplosion.gameObject, 2.5f);
 			Destroy(other.gameObject);
 		}
 	}

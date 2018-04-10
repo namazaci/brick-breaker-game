@@ -38,6 +38,7 @@ public class Ball : MonoBehaviour {
 			Debug.Log("Ball hit the bottom of the screen");
 			rb.velocity = Vector2.zero;	
 			inPlay = false;
+			gm.UpdateLives(-1);
 		}
 	}
 
